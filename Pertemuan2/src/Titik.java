@@ -37,5 +37,33 @@ public class Titik {
         System.out.println("Titik(" + absis + "," + ordinat + ")");
     }
     
+    int getKuadran() {
+        int kuad = 0;
+        if (absis > 0 && ordinat > 0) {
+            kuad = 1;
+        } else if (absis > 0 && ordinat < 0) {
+            kuad = 2;
+        } else if (absis < 0 && ordinat < 0) {
+            kuad = 3;
+        } else if (absis > 0 && ordinat < 0) {
+            kuad = 4;
+        }
+        return kuad;
+    }
+
+    double getJarakPusat() {
+        double jarak;
+        jarak = Math.sqrt(Math.pow(absis, 2) + Math.pow(ordinat, 2));
+        return jarak;
+    }
+
+Titik getRefleksiX(){
+        Titik T1 = new Titik();
+        T1.setOrdinat(-1*ordinat);
+        T1.setAbsis(absis);
+        return T1;
+    }
+
+
 }
 
