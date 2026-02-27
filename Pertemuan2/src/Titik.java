@@ -25,7 +25,7 @@ public class Titik {
     }
 
     void setOrdinat (double y){
-        absis = y;
+        ordinat = y;
     }
 
     void Geser (double x, double y){
@@ -41,7 +41,7 @@ public class Titik {
         int kuad = 0;
         if (absis > 0 && ordinat > 0) {
             kuad = 1;
-        } else if (absis > 0 && ordinat < 0) {
+        } else if (absis < 0 && ordinat > 0) {
             kuad = 2;
         } else if (absis < 0 && ordinat < 0) {
             kuad = 3;
@@ -57,13 +57,32 @@ public class Titik {
         return jarak;
     }
 
-Titik getRefleksiX(){
+    double getJarak(Titik T) {
+    double dx = this.absis - T.absis;
+    double dy = this.ordinat - T.ordinat;
+    return Math.sqrt(dx*dx + dy*dy);
+    }
+
+    void refleksiX() {
+    this.ordinat = -ordinat;
+    }
+
+    void refleksiY() {
+    this.absis = -absis;
+    }
+
+    Titik getRefleksiX(){
         Titik T1 = new Titik();
         T1.setOrdinat(-1*ordinat);
         T1.setAbsis(absis);
         return T1;
     }
 
-
+    Titik getRefleksiY(){
+        Titik T1 = new Titik();
+        T1.setAbsis(-1*absis);
+        T1.setOrdinat(ordinat);
+        return T1;
+    }
 }
 
