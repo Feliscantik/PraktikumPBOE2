@@ -7,11 +7,16 @@ public class Titik {
     double absis;
     double ordinat;
 
-    Titik () {
+    public Titik () {
         absis = 0;
         ordinat = 0;
     }
 
+    public Titik(double x, double y) {
+        this.absis = x;
+        this.ordinat = y;
+    }
+    
     double getAbsis(){
         return absis;
     }
