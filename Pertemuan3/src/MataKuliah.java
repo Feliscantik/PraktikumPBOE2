@@ -1,52 +1,47 @@
+/* Nama File    : MataKuliah.java
+ * Deskripsi    : Berisi atribut dan method dalam class MataKuliah
+ * Pembuat      : Felicia Evelina
+ * Tanggal      : 11 Maret 2026
+ */
+
 public class MataKuliah {
-    /********* ATRIBUT *********/ 
-    private String idMatkul;
+    private String idMatKul;
     private String nama;
-    private int sks;
-    
-    /********* METHOD *********/
-    // konstruktor tanpa parameter
-    public MataKuliah(){
-        this.idMatkul = "";
+    private int SKS;
+
+    public MataKuliah() {
+        this.idMatKul = "";
         this.nama = "";
-        this.sks = 0;
+        this.SKS = 0;
     }
 
-    // konstruktor dengan parameter
-    public MataKuliah(String idMatkul, String nama, int sks){
-        this.idMatkul = idMatkul;
+    MataKuliah(String idMatKul, String nama, int SKS) {
+        this.idMatKul = idMatKul;
         this.nama = nama;
-        this.sks = sks;
+        this.SKS = SKS;
     }
 
-    // setter
-    public String getidMatkul(){
-        return this.idMatkul;
+    String getidMatKulMataKuliah() {
+        return this.idMatKul;
     }
 
-    public String getNama(){
+    String getNamaMataKuliah() {
         return this.nama;
     }
 
-    public int getsks(){
-        return this.sks;
+    int getSKSMahasiswa() {
+        return this.SKS;
     }
 
-    // mutator
-    public void setNIP(String idMatkulString){
-        idMatkul = idMatkulString;
+    public void setidMatKulMataKuliah(String idMatKul) {
+        this.idMatKul = idMatKul;
     }
 
-    public void setNama(String namaMatkul){
-        nama = namaMatkul;
+    public void setNamaMataKuliah(String nama) {
+        this.nama = nama;
     }
-
-    public void setProdi(int SKSmatkul){
-        sks = SKSmatkul;
-    }
-
-    public String getNamaMataKuliah() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNamaMataKuliah'");
+    
+    public void setSKSMahasiswa(int SKS) {
+        this.SKS = SKS;
     }
 }

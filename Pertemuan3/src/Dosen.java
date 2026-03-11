@@ -1,47 +1,48 @@
+/* Nama File    : Dosen.java
+ * Deskripsi    : Berisi atribut dan method dalam class Dosen
+ * Pembuat      : Felicia Evelina
+ * Tanggal      : 11 Maret 2026
+ */
+
 public class Dosen {
-    /********* ATRIBUT *********/ 
-    private String nip;
+    private String NIP;
     private String nama;
     private String prodi;
-    
-    /********* METHOD *********/
-    // konstruktor tanpa parameter
-    public Dosen(){
-        this.nip = "";
+
+    public Dosen() {
+        this.NIP = "";
         this.nama = "";
         this.prodi = "";
     }
 
-    // konstruktor dengan parameter
-    public Dosen(String nip, String nama, String prodi){
-        this.nip = nip;
+    Dosen(String NIP, String nama, String prodi) {
+        this.NIP = NIP;
         this.nama = nama;
         this.prodi = prodi;
     }
 
-    // setter
-    public String getNIP(){
-        return this.nip;
+    String getNIPDosen() {
+        return this.NIP;
     }
 
-    public String getNama(){
+    String getNamaDosen() {
         return this.nama;
     }
 
-    public String getProdString(){
+    String getProdiDosen() {
         return this.prodi;
     }
 
-    // mutator
-    public void setNIP(String nipDosen){
-        nip = nipDosen;
+    public void setNIPDosen(String NIP) {
+        this.NIP = NIP;
     }
 
-    public void setNama(String namaDosen){
-        nama = namaDosen;
+    public void setNamaDosen(String nama) {
+        this.nama = nama;
     }
 
-    public void setProdi(String prodiDosen){
-        prodi = prodiDosen;
+    public void setProdiDosen(String prodi) {
+        this.prodi = prodi;
     }
+
 }

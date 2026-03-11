@@ -1,36 +1,37 @@
+/* Nama File    : Kendaraan.java
+ * Deskripsi    : Berisi atribut dan method dalam class Kendaraan
+ * Pembuat      : Felicia Evelina
+ * Tanggal      : 11 Maret 2026
+ */
+
 public class Kendaraan {
-     /********* ATRIBUT *********/ 
     private String noPlat;
     private String jenis;
-    
-    /********* METHOD *********/
-    // konstruktor tanpa parameter
-    public Kendaraan(){
+
+    public Kendaraan() {
         this.noPlat = "";
         this.jenis = "";
     }
 
-    // konstruktor dengan parameter
-    public Kendaraan(String noPlat, String jenis){
+    Kendaraan(String noPlat, String jenis) {
         this.noPlat = noPlat;
         this.jenis = jenis;
     }
 
-    // setter
-    public String getnoPlat(){
+    String getnoPlatKendaraan() {
         return this.noPlat;
     }
 
-    public String getJenis(){
+    String getJenisKendaraan() {
         return this.jenis;
     }
 
-    // mutator
-    public void setnoPlat(String noPlatString){
-        noPlat = noPlatString;
+    public void setnoPlatKendaraan(String noPlat) {
+        this.noPlat = noPlat;
     }
 
-    public void setJenis(String jeniskendaraan){
-        jenis = jeniskendaraan;
+    public void setJenisKendaraan(String jenis) {
+        this.jenis = jenis;
     }
+
 }
