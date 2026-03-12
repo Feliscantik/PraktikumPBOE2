@@ -44,16 +44,24 @@ public class Pegawai {
         return TMT;
     }
 
-    public void setTMT(LocalDate T){
+    public void setTMT(LocalDate TMT){
         this.TMT = TMT;
     }
 
-    public String getNIP(){
-        return NIP;
+    public double getgajipokok(){
+        return gajipokok;
     }
 
-    public void setNIP(String NIP){
-        this.NIP = NIP;
+    public void setgajipokok(double gajipokok){
+        this.gajipokok = gajipokok;
     }
 
+    abstract 
+    public void printInfo(){
+        System.out.println("NIP: " + NIP);
+        System.out.println("Nama: " + Nama);
+        System.out.println("Tanggal Lahir: " + TanggalLahir);
+        System.out.println("TMT: " + TMT);
+        System.out.println("Gaji pokok: " + gajipokok);
+    }
 }
