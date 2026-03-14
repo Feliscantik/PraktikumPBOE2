@@ -1,7 +1,6 @@
 import java.time.LocalDate;
 
-
-public class Pegawai {
+public abstract class Pegawai {
     protected String NIP;
     protected String Nama;
     protected LocalDate TanggalLahir;
@@ -56,7 +55,8 @@ public class Pegawai {
         this.gajipokok = gajipokok;
     }
 
-    abstract 
+    public abstract int getPub();
+
     public void printInfo(){
         System.out.println("NIP: " + NIP);
         System.out.println("Nama: " + Nama);
