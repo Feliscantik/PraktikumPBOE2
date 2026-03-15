@@ -1,3 +1,9 @@
+/**
+ * File : Lingkaran.java
+ * deskripsi : Class anak lingkaran dari induk bangun datar
+ * nama : Felicia Evelina
+ * tanggal : 12 Maret 2026
+ */
 public class Lingkaran extends BangunDatar
 {
     private double jari;

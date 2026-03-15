@@ -1,3 +1,9 @@
+/**
+ * File : Persegi.java
+ * deskripsi : Class anak persegi dari induk bangun datar
+ * nama : Felicia Evelina
+ * tanggal : 12 Maret 2026
+ */
 public class Persegi extends BangunDatar
 {
     private double sisi;

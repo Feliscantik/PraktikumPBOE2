@@ -1,3 +1,9 @@
+/**
+ * File : BangunDatar.java
+ * deskripsi : Class induk bangun datar
+ * nama : Felicia Evelina
+ * tanggal : 12 Maret 2026
+ */
 public class BangunDatar
 {
     // Menggunakan protected agar bisa diakses langsung oleh kelas turunannya (Bagian 4)

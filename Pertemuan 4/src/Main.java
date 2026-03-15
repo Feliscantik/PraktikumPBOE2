@@ -1,3 +1,9 @@
+/**
+ * File : Main.java
+ * deskripsi : Main dari induk bangun datar dan class anaknya
+ * nama : Felicia Evelina
+ * tanggal : 12 Maret 2026
+ */
 public class Main {
     public static void main(String[] args)
     {

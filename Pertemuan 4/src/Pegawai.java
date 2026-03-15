@@ -1,4 +1,13 @@
+/**
+ * File : Pegawai.java
+ * deskripsi : Class induk pegawai
+ * nama : Felicia Evelina
+ * tanggal : 15 Maret 2026
+ */
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.time.Period;
 
 public abstract class Pegawai {
     protected String NIP;
@@ -56,12 +65,24 @@ public abstract class Pegawai {
     }
 
     public abstract int getPub();
+    public abstract double getTunjangan();
+
+    public String getFormatTanggal(LocalDate tgl) {
+    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("d MMMM yyyy", new Locale("id", "ID"));
+    return tgl.format(fmt);
+    }
+
+    public String getMasaKerja() {
+    Period p = Period.between(this.TMT, LocalDate.now());
+    return p.getYears() + " tahun " + p.getMonths() + " bulan";
+    }
 
     public void printInfo(){
         System.out.println("NIP: " + NIP);
         System.out.println("Nama: " + Nama);
-        System.out.println("Tanggal Lahir: " + TanggalLahir);
-        System.out.println("TMT: " + TMT);
+        System.out.println("Tanggal Lahir: " + getFormatTanggal(TanggalLahir));
+        System.out.println("TMT: " + getFormatTanggal(TMT));
+        System.out.println("Masa Kerja     : " + getMasaKerja());
         System.out.println("Gaji pokok: " + gajipokok);
     }
 }
