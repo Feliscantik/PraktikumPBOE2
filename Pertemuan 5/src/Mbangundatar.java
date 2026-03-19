@@ -1,3 +1,9 @@
+/**
+ * File : Mbangundatar.java
+ * deskripsi : Main untuk class induk Bangundatar dan class anaknya
+ * nama : Felicia Evelina
+ * tanggal : 19 Maret 2026
+ */
 public class Mbangundatar {
     public static void main(String[] args){
         Bangundatar P1 = new Persegi2(10);
@@ -7,6 +13,7 @@ public class Mbangundatar {
 
         System.out.println("Luas P1: " + P1.getLuas());
         System.out.println("Luas L1: " + L1.getLuas());
+        System.out.println("Luas L2: " + L2.getLuas());
 
         System.out.println("Apakah Luas P1 == L1 ?: " + P1.isEqualLuas(L1));
 

@@ -1,3 +1,9 @@
+/**
+ * File : Lingkaran2.java
+ * deskripsi : Class anak Lingkaran2 dari class induk Bangundatar
+ * nama : Felicia Evelina
+ * tanggal : 19 Maret 2026
+ */
 public class Lingkaran2 extends Bangundatar implements IResize {
     private double r;
 

@@ -1,3 +1,9 @@
+/**
+ * File : Bangundatar.java
+ * deskripsi : Class induk Bangundatar 
+ * nama : Felicia Evelina
+ * tanggal : 19 Maret 2026
+ */
 public abstract class Bangundatar {
     protected String warna;
     protected String border;

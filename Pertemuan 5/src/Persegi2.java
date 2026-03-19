@@ -1,3 +1,9 @@
+/**
+ * File : Persegi2.java
+ * deskripsi : Class anak Persegi2 dari class induk Bangundatar
+ * nama : Felicia Evelina
+ * tanggal : 19 Maret 2026
+ */
 public class Persegi2 extends Bangundatar implements IResize{
     private double sisi2;
 
