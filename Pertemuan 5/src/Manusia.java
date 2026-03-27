@@ -17,7 +17,7 @@ public abstract class Manusia {
 
     public Manusia(String nama, String tglstring, String alamat, double pendapatan){
         this.nama = nama;
-        this.tgl_mulai_kerja = tgl_mulai_kerja;
+        this.tgl_mulai_kerja = LocalDate.parse(tglstring, f);
         this.alamat = alamat;
         this.pendapatan = pendapatan;
         counterMns++;
