@@ -4,18 +4,18 @@
  * Tanggal      : 11 Maret 2026
  */
 
-public class Dosen {
+public class Dosen1 {
     private String NIP;
     private String nama;
     private String prodi;
 
-    public Dosen() {
+    public Dosen1() {
         this.NIP = "";
         this.nama = "";
         this.prodi = "";
     }
 
-    Dosen(String NIP, String nama, String prodi) {
+    Dosen1(String NIP, String nama, String prodi) {
         this.NIP = NIP;
         this.nama = nama;
         this.prodi = prodi;

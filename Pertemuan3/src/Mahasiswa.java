@@ -16,7 +16,7 @@ public class Mahasiswa {
     private String nama;
     private String prodi;
     ArrayList<MataKuliah> listMatKul;
-    private Dosen dosenWali;
+    private Dosen1 dosenWali;
     private Kendaraan kendaraan;
 
     /********** METHOD **********/
@@ -53,7 +53,7 @@ public class Mahasiswa {
         return kendaraan;
     }
 
-    public Dosen getDosenWali() {
+    public Dosen1 getDosenWali() {
         return dosenWali;
     }
 
@@ -71,7 +71,7 @@ public class Mahasiswa {
     }
 
     //Agregasi
-    public void setDosenWali(Dosen dosenWali) {
+    public void setDosenWali(Dosen1 dosenWali) {
         this.dosenWali = dosenWali;
     }
 
