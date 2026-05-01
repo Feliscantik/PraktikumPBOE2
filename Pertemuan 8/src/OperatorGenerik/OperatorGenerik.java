@@ -3,7 +3,7 @@ import Anabul2.Datum;
 import Anabul2.Kucing;
 
 public class OperatorGenerik {
-    public <T extends Kucing> void Tukar(Datum<T> a, Datum<T> b) {
+    public <T> void Tukar(Datum<T> a, Datum<T> b) {
         T temp = a.getIsi();
         a.setIsi(b.getIsi());
         b.setIsi(temp);

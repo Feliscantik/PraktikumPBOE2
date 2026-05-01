@@ -6,7 +6,7 @@ package Anabul2;
 // Tanggal      : 1 Mei 2026
 
 // T extends Kucing artinya T hanya boleh Kucing atau anak-anaknya
-public class Datum<T extends Kucing> {
+public class Datum<T> {
     private T isi;
 
     public void setIsi(T isibaru) { 
