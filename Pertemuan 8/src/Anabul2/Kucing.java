@@ -16,4 +16,9 @@ public class Kucing extends Anabul2 {
     public double getBobot() { 
         return bobot; 
     }
+
+    @Override
+    public String toString() {
+        return "Kucing: " + nama + " (" + bobot + " kg)";
+    }
 }

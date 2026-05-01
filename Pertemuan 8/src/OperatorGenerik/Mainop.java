@@ -1,6 +1,11 @@
 package OperatorGenerik;
 import Anabul2.*;
 
+// Nama File    : Anabul2.java
+// NIM          : 24060124120012
+// Nama         : Felicia Evelina
+// Tanggal      : 1 Mei 2026
+
 public class Mainop {
     public static void main(String[] args) {
         OperatorGenerik op = new OperatorGenerik();
