@@ -5,7 +5,7 @@ package Anabul2;
 // Nama         : Felicia Evelina
 // Tanggal      : 1 Mei 2026
 
-public class MainAnabul2 {
+public class MainDatum {
     public static void main(String[] args) {
         // Ini BOLEH karena Anggora keturunan Kucing
         Datum<Anggora> d1 = new Datum<>();
