@@ -4,12 +4,12 @@ public class MainPiaraan{
     public static void main(String[] args) {
         Piaraan klinik = new Piaraan();
 
-        Anabul a1 = new Anabul("Gerry", 5.2);
-        Kucing k1 = new Kucing("Mimi", 3.5);
-        Kucing k2 = new Kucing("Oyen", 4.0);
-        Anabul a2 = new Anabul("Bobi", 10.0);
+        Anabul3 a1 = new Anabul3("Bobon", 5.2);
+        Kucing2 k1 = new Kucing2("Bibin", 3.5);
+        Kucing2 k2 = new Kucing2("Bubun", 4.0);
+        Anabul3 a2 = new Anabul3("Baban", 10.0);
 
-        a1.setNama("Gerry Jr");
+        a1.setNama("Bobon Jr");
 
         klinik.enqueueAnabul(a1);
         klinik.enqueueAnabul(k1);
@@ -18,23 +18,15 @@ public class MainPiaraan{
 
         System.out.println("NbElm: " + klinik.getNbelm());
 
-        System.out.println("\n--- showAnabul ---");
         klinik.showAnabul();
 
-        System.out.println("\n--- isMember ---");
-        System.out.println("Apakah Mimi member? " + klinik.isMember(k1));
+        System.out.println("Apakah member? " + klinik.isMember(k1));
 
-        System.out.println("\n--- countKucing & bobotKucing ---");
         System.out.println("Jumlah Kucing: " + klinik.countKucing());
         System.out.println("Total Bobot Kucing: " + klinik.bobotKucing());
 
-        System.out.println("\n--- showJenisAnabul ---");
-        // Karena showJenisAnabul belum ada di file Piaraan.java yang kamu kirim, 
-        // ini adalah implementasi manual di main sesuai logika getClass() dan getName()
-        System.out.println(a1.getNama() + " adalah " + a1.getClass().getName());
-        System.out.println(k1.getNama() + " adalah " + k1.getClass().getName());
+        klinik.showJenisAnabul();
 
-        System.out.println("\n--- getAnabul & dequeueAnabul ---");
         System.out.println("Data pertama: " + klinik.getanabul().getNama());
         System.out.println("Mengeluarkan: " + klinik.dequeueAnabul().getNama());
 
