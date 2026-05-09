@@ -76,7 +76,7 @@ public class Piaraan {
 
     public void showJenisAnabul() {
         for (Anabul3 a : this.Lanabul) {
-            System.out.println("Panggilan" + a.getNama() + "Jenis" + a.getClass().getName());
+            System.out.println("Panggilan"  + a.getNama()  + "Jenis"  + a.getClass().getName());
         }
     }  
 }
